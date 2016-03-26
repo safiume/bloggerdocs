@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--PowerStats Table Model Parameter Template Ver 1.0 Created on 3/25/2016-->
+<paramFile version="1.0" createdBy="PowerStats v1.0">
+    <DSNumber value="54" />
+    <title value="Annualized salary for primary job in 2012 with (percent &gt;.01), Annualized salary for primary job in 2012 0, Annualized salary for current job in 2009 with (percent &gt;.01), Annualized salary for current job in 2009 0 by Gender, Job in 2012 related to bachelor&amp;apos;s degree major, Occupation for primary job in 2012, Employment and enrollment status in 2012, Annualized salary for primary job in 2012, Annualized total salary for all jobs in 2012 and Annualized salary for current job in 2009." />
+    <footnote value="" />
+    <flagRSE value="30,50" symbol="!,!!" />
+    <weight type="1" varName="WTE000" label="weight_var" />
+    <span tag="CAT" missingValue="-9,-3,-9" format="Disc" varName="GENDER" label="Gender">
+        <element value="1" label="Male" />
+        <element value="2" label="Female" />
+    </span>
+    <columns>
+        <component tag="Percentage&gt;.01" missingValue="-3,-9" format="Cont" varName="B2CJSAL" label="Annualized salary for primary job in 2012" />
+        <component tag="Average" missingValue="" format="Cont" varName="B2CJSAL" label="Annualized salary for primary job in 2012" />
+        <component tag="Percentage&gt;.01" missingValue="-9" format="Cont" varName="B1ERNINC" label="Annualized salary for current job in 2009" />
+        <component tag="Average" missingValue="" format="Cont" varName="B1ERNINC" label="Annualized salary for current job in 2009" />
+    </columns>
+    <rows>
+        <component tag="CAT" missingValue="-3,-9,-9" format="Disc" varName="B2DNSF19B" label="Job in 2012 related to bachelor&amp;apos;s degree major">
+            <element value="0" label="Not related" />
+            <element value="1" label="Closely related" />
+            <element value="2" label="Somewhat related" />
+            <element value="-3" label="{Skipped}" />
+        </component>
+        <component tag="CAT" missingValue="-9,-9" format="Disc" varName="B2CJOCC33" label="Occupation for primary job in 2012">
+            <element value="1" label="Agriculture occupations" />
+            <element value="2" label="Air transportation professionals" />
+            <element value="3" label="Artists and designers" />
+            <element value="4" label="Business managers" />
+            <element value="5" label="Business occupations (non-management)" />
+            <element value="6" label="Business/legal support (non-secretarial)" />
+            <element value="7" label="Communication professionals" />
+            <element value="8" label="Computer/information systems occupations" />
+            <element value="9" label="Construction/mining occupations" />
+            <element value="10" label="Engineering technicians" />
+            <element value="11" label="Engineers" />
+            <element value="12" label="Fitters, tradesmen and mechanics" />
+            <element value="13" label="Food service occupations" />
+            <element value="14" label="Healthcare professionals (non-nurses)" />
+            <element value="15" label="Information professionals" />
+            <element value="16" label="Legal professionals" />
+            <element value="17" label="Life scientists" />
+            <element value="18" label="Math-related occupations" />
+            <element value="19" label="Military" />
+            <element value="20" label="Nurses" />
+            <element value="21" label="Other educators" />
+            <element value="22" label="Other healthcare occupations" />
+            <element value="23" label="Personal care occupations" />
+            <element value="24" label="Physical scientists" />
+            <element value="25" label="PK-12 educators" />
+            <element value="26" label="Postsecondary educators" />
+            <element value="27" label="Protective service occupations" />
+            <element value="28" label="Sales occupations" />
+            <element value="29" label="Secretaries and administrative assistants" />
+            <element value="30" label="Social scientists" />
+            <element value="31" label="Social service professionals" />
+            <element value="32" label="Sports occupations" />
+            <element value="33" label="Transport support occupations" />
+            <element value="-3" label="{Skipped}" />
+        </component>
+        <component tag="CAT" missingValue="-9,-9" format="Disc" varName="B2LFP12" label="Employment and enrollment status in 2012">
+            <element value="1" label="Full time, one job, enrolled" />
+            <element value="2" label="Full time, one job, not enrolled" />
+            <element value="3" label="Part time, one job, enrolled" />
+            <element value="4" label="Part time, one job, not enrolled" />
+            <element value="5" label="Multiple jobs, enrolled" />
+            <element value="6" label="Multiple jobs, not enrolled" />
+            <element value="7" label="Unemployed, enrolled" />
+            <element value="8" label="Unemployed, not enrolled" />
+            <element value="9" label="Out of the labor force, enrolled" />
+            <element value="10" label="Out of the labor force, not enrolled" />
+            <element value="-3" label="{Skipped}" />
+        </component>
+        <component tag="CUT" missingValue="" format="Cont" varName="B2CJSAL" label="Annualized salary for primary job in 2012">
+            <element startValue="1" endValue="15599" label="$1-15,599" />
+            <element startValue="15600" endValue="26999" label="$15,600-26,999" />
+            <element startValue="27000" endValue="39999" label="$27,000-39,999" />
+            <element startValue="40000" endValue="75999" label="$40,000-75,999" />
+            <element startValue="76000" endValue="470000" label="76,000 or more" />
+        </component>
+        <component tag="CUT" missingValue="" format="Cont" varName="B2INC12" label="Annualized total salary for all jobs in 2012">
+            <element startValue="1" endValue="20899" label="$1-20,899" />
+            <element startValue="20900" endValue="31199" label="$20,900-31,199" />
+            <element startValue="31200" endValue="42999" label="$31,200-42,999" />
+            <element startValue="43000" endValue="59999" label="$43,000-59,999" />
+            <element startValue="60000" endValue="79499" label="$60,000-79,499" />
+            <element startValue="79500" endValue="470000" label="$79,500 or more" />
+        </component>
+        <component tag="CUT" missingValue="" format="Cont" varName="B1ERNINC" label="Annualized salary for current job in 2009">
+            <element startValue="1" endValue="27456" label="$1-27,456" />
+            <element startValue="27457" endValue="36000" label="$27,457-36,000" />
+            <element startValue="36001" endValue="49200" label="$36,001-49,200" />
+            <element startValue="49201" endValue="250000" label="$49,201 or more" />
+        </component>
+    </rows>
+</paramFile>
